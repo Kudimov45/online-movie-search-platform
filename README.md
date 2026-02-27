@@ -1,2 +1,2 @@
-# online-movie-search-platform
+# 🎬online-movie-search-platform
 Стек: React+Redux, TypeScript, HTML/CSS
