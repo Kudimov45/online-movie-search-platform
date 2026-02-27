@@ -1,0 +1,70 @@
+.genre-movies__title {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0;
+    text-align: start;
+    text-transform: capitalize;
+}
+
+.genre-movies__wrapper-title {
+    display: flex;
+    margin: 0 0 64px 0;
+    align-items: center
+}
+
+.genre-movies__title-icon {
+    padding: 10px 14px;
+}
+
+.genre-movies__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 64px 0;
+}
+
+.genre-movies__list-item {
+    width: 224px;
+    height: 336px;
+}
+
+.genre-movies__btn-more {
+    width: 218px;
+}
+
+@media (max-width: 768px) {
+    .genre-movies__title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .genre-movies__title-icon {
+        padding: 0 11px 0;
+    }
+
+    .genre-movies__link {
+        height: 22px;
+    }
+    .genre-movies__wrapper-title {
+        margin-bottom: 40px;
+    }
+
+    .genre-movies__list-item {
+        height: 502px;
+        width: 335px;
+    }
+
+    .genre-movies__list-item .card-movie {
+        height: 502px;
+        width: 335px;
+    }
+
+    .genre-movies__list-item .card-movie__img {
+        height: 502px;
+        width: 335px;
+    }
+}

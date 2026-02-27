@@ -1,0 +1,240 @@
+.card--movie {
+    display: flex;
+    gap: 10px
+}
+
+.card__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.card__wrapper-info {
+    display: flex;
+    gap: 16px;
+    color: #FFFFFFB2;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.card__wrapper-rating {
+    padding: 4px 12px;
+    font-weight: 700;
+    background-color: #308E21;
+    border-radius: 16px;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.card__wrapper-rating--red {
+    background-color: #C82020;
+}
+
+.card__wrapper-rating--grey {
+    background-color: #777777;
+}
+
+.card__wrapper-rating--green {
+    background-color: #308E21;
+}
+
+.card__wrapper-rating--gold {
+    background-color: #A59400;
+}
+
+.card__rating {
+    color: #FFFFFF;
+    display: block;
+    
+}
+
+.card__title {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0 0 16px;
+    text-align: start;
+}
+
+.card__info {
+    text-align: start;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFFB2;
+    margin: 0 0 60px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card__img {
+    width: 680px;
+    height: 552px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.card__wrapper-btn {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 80px;
+}
+
+.card__link-trailer {
+    display: block;
+    padding: 16px 48px;
+    background-color: #67A5EB;
+    color: #FFFFFF;
+    border-radius: 28px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.card__link-about {
+    display: block;
+    padding: 16px 48px;
+    background-color: #393B3C;
+    color: #FFFFFF;
+    border-radius: 28px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0;
+} 
+
+.card__btn-favorite {
+    padding: 18px 22px 12px;
+    background-color: #393B3C;
+    border-radius: 28px;
+    border: none;
+}
+
+.card__link-new {
+    padding: 16px 22px;
+    background-color: #393B3C;
+    border-radius: 28px;
+    border: none;
+}
+
+.about__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF;
+    text-align: start;
+    margin: 0 0 64px 0;
+}
+
+.about__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.about__wrapper-info {
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.about__spacer {
+    width: 177px;
+    height: 1px;
+    border-bottom: 1px dashed #FFFFFF80
+}
+
+@media (max-width: 768px) {
+    .card--movie {
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    .card__img {
+    width: 338px;
+    height: 234px;
+    object-fit: cover;
+    border-radius: 16px;
+    }
+
+    .card__wrapper {
+        padding: 24px 0;
+    }
+
+    .card__wrapper-info {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 12px;
+    }
+
+    .card__title {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 12px;
+    }
+
+    .card__info {
+        font-size: 18px;
+        line-height: 24px;
+        margin: 0 0 32px;
+    }
+
+    .card__wrapper-btn {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr;
+        margin-bottom: 0;
+    }
+
+    .card__wrapper-btn--movie-info {
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        grid-template-rows: 1fr;
+    }
+
+    .card__link-trailer {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+    }
+    .card__btn-favorite{
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .card__link-about {
+        padding: 16px
+    }
+
+    .card--movie {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 32px;
+    }
+
+    .about__title {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 40px;
+    }
+
+    .about__spacer {
+        display: none;
+    }
+
+    .about__wrapper-info {
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    .about__wrapper {
+        gap: 12px;
+    }
+    
+}

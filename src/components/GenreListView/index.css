@@ -1,0 +1,20 @@
+.genres__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.genres__list-item {
+    width: 290px;
+    height: 304px;
+}
+
+@media (max-width: 768px) {
+    .genres__list-item {
+    width: 335px;
+    height: 304px;
+}
+}

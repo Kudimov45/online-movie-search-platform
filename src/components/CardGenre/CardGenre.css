@@ -1,0 +1,44 @@
+.card-genre {
+    position: relative;
+    width: 288px;
+    height: 302px;
+    border: 1px solid #FFFFFF40;
+    border-radius: 24px;
+}
+
+.card-genre__img {
+    width: 288px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 24px 24px 0 0;
+}
+
+.card-genre__name {
+    position: absolute;
+    color:#FFFFFF;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    padding: 30px 30px;
+    background-color: #0A0B0B;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    border-radius: 0 0 24px 24px;
+}
+
+@media (max-width: 768px) {
+    .card-genre__img {
+    width: 333px;
+    }
+
+    .card-genre {
+    position: relative;
+    width: 333px;
+    }
+
+    .card-genre__name {
+        width: 82.5%;
+    }
+}
